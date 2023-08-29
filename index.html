@@ -14,7 +14,6 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet" />
 </head>
-
 <body>
   <header class="flex-header">
     <div class="container flex-header">
@@ -22,32 +21,48 @@
         <a href="#" class="link logo">
           web<span class="logo-studio">studio</span>
         </a>
-        <ul class="list nav">
-          <li>
-            <a class="link-is-active current-page" href="./index.html">Studio</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="link">Portfolio</a>
-          </li>
-          <li>
-            <a href="" class="link">Contacts</a>
-          </li>
-        </ul>
+        <button class="menu-toggle js-open-menu">
+          <svg width="32px" height="22px">
+            <use href="./images/icons-hm6.svg#icon-hamburger" class="icon-hamburger"></use>
+          </svg>
+        </button>
+        <div class="menu-hamburger">
+
+        <menu class="menu-nav js-menu-container">
+          <ul class="list nav">
+            <li>
+              <a class="link-is-active current-page" href="./index.html">Studio</a>
+            </li>
+            <li>
+              <a href="./portfolio.html" class="link">Portfolio</a>
+            </li>
+            <li>
+              <a href="" class="link">Contacts</a>
+            </li>
+          </ul>        </menu>
+          <address class="contacts">
+            <ul class="list address">
+              <li>
+                <a href="mailto:info@devstudio.com" class="link contacts email">
+                  info@devstudio.com
+                </a>
+              </li>
+              <li>
+                <a href="tel:+11(000)111-11-11" class="link contacts phone">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+            </ul>
+          </address>
+            <button type="button" class="js-close-menu">
+              <svg width="8px" height="8px">
+                <use href="./images/icons-hm6.svg#icon-close-black" class="nav-icon-close"></use>
+              </svg>
+            </button>
+
+      </div>
       </nav>
-      <address class="contacts">
-        <ul class="list address">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link contacts email">
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:+11(000)111-11-11" class="link contacts phone">
-              +11 (000) 111-11-11
-            </a>
-          </li>
-        </ul>
-      </address>
+   
     </div>
   </header>
   <main>

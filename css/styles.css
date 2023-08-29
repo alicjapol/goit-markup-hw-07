@@ -40,11 +40,13 @@ h1 {
   margin:0;
 }
 
-.container {
-  max-width: 1158px;
-  margin: 0 auto;
-  padding: 0 15px;
+@media (max-width: 480px){
+.container{
+  width: 100%;
+  padding: 0 26px;
 }
+}
+
 
 .link,
 .link-is-active,
@@ -184,6 +186,14 @@ address {
   margin: 0 auto;
   background-position: center;
 }
+
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(https://github.com/alicjapol/goit-markup-hw-07/blob/main/images/people-office-2.jpg)
+  } }
 
 .hero-header {
   margin: 0 auto;
@@ -597,13 +607,15 @@ h4 > .element-header {
   transform: translate(-50%, -50%);
 }
 
-.modal-icon-close {
+.modal-icon-close,
+.nav-icon-close {
   position: absolute;
   width: 8px;
   height: 8px;
 }
 
-.modal-close {
+.modal-close,
+.js-close-menu{
   position: absolute;
   top: 24px;
   right: 24px;
@@ -912,4 +924,43 @@ color: var(--ocean);}
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
+}
+
+
+/* MEDIA */
+
+.menu-toggle {
+  padding-block: none;
+    padding-inline: none;
+    border-width: none;
+    border-style: none;
+    border-color: none;
+    border-image: none;
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+.menu-toggle:hover, .menu-toggle:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px){
+.menu-toggle,
+.js-close-menu {
+    display: none;
+}}
+
+.icon-hamburger {
+  stroke: currentColor; 
+  fill: var(--white);
+  background-color: transparent;
 }
