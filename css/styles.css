@@ -854,6 +854,7 @@ color: var(--ocean);}
       max-width: 100%;
       margin: 0 auto;
       padding: 0 15px;
+      overflow: hidden;
     }
     
     .logo {
@@ -1112,6 +1113,10 @@ align-self: center;
 	translate: none;
 }
 
+.menu-mobile button {
+  display: flex;
+justify-content: flex-end;
+}
 
 
 
@@ -1150,6 +1155,17 @@ align-self: center;
   letter-spacing: 0.4px;
   margin-bottom: 48px;
   }
+
+
+.flex-nav-desk {
+  display: none;
+}
+
+.flex-header {
+  display: flex;
+  align-items: center;
+}
+
   }
 
 
