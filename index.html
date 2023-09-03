@@ -26,22 +26,24 @@
       <div class="menu-mobile">
 
         <!-- burger menu start -->
-            <button class="icon-hamburger js-open-menu">
+            <button class="icon-hamburger js-open-menu" >
           <svg width="32px" height="22px">
             <use href="./images/icons-hm6.svg#icon-hamburger" class="icon-hamburger"></use>
           </svg>
         </button>       
         <div class="mobile-menu js-menu-container">
-          <button class="menu-button generic-button js-close-menu">x</button>
-          <ul class="list nav">
+          <button class="menu-button generic-button js-close-menu">    <svg width="8px" height="8px">
+            <use href="./images/icons-hm6.svg#icon-close-black" class="modal-icon-close"></use>
+          </svg></button>
+          <ul class="list nav-mobile">
             <li class="isactive">
-              <a class="link-is-active current-page" href="./index.html">Studio</a>
+              <a class="link-mobile current-page" href="./index.html">Studio</a>
             </li>
             <li>
-              <a href="./portfolio.html" class="link">Portfolio</a>
+              <a href="./portfolio.html" class="link-mobile">Portfolio</a>
             </li>
             <li>
-              <a href="" class="link">Contacts</a>
+              <a href="" class="link-mobile">Contacts</a>
             </li>
           </ul>
           <address>
@@ -50,7 +52,7 @@
               <li><a href="mailto:info@devstudio.com" class="link-contacts-js link-email"> info@devstudio.com</a></li>
             </ul>
             </address>
-            <ul class="social-media">
+            <ul class="social-media-mobile">
               <li class="circle">
                 <a href="">
                   <svg width="16px" height="16px">
@@ -86,8 +88,8 @@
 
 
     <!-- MENU na TABLET/DESKTOP -->
-    <div class="flex-nav-desk">
-    <nav class="flex-nav">
+    <div class="flex-nav-desk desk">
+ 
 
       <ul class="list nav">
         <li>
@@ -526,41 +528,9 @@
         </form>
       </div>
   </footer>
-  <div class="burger-menu js-menu-container is-open">
-    <button type="button" class="js-close-menu">
-      <svg width="8px" height="8px">
-        <use href="./images/icons-hm6.svg#icon-close-black" class="nav-icon-close"></use>
-      </svg>
-    </button>
-    <ul class="list nav">
-      <li>
-        <a class="link-is-active current-page" href="./index.html">Studio</a>
-      </li>
-      <li>
-        <a href="./portfolio.html" class="link">Portfolio</a>
-      </li>
-      <li>
-        <a href="" class="link">Contacts</a>
-      </li>
-    </ul>
-    <address class="contacts">
-      <ul class="list address">
-        <li>
-          <a href="mailto:info@devstudio.com" class="link contacts email">
-            info@devstudio.com
-          </a>
-        </li>
-        <li>
-          <a href="tel:+11(000)111-11-11" class="link contacts phone">
-            +11 (000) 111-11-11
-          </a>
-        </li>
-      </ul>
-    </address>
-  </div>
-
-  <script src="./js/mobile-menu.js"></script>
-  <script src="./js/modal.js"></script>
+  
+  <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+  <script defer src="./js/mobile-menu.js"></script>  <script src="./js/modal.js"></script>
 
 </body>
 
