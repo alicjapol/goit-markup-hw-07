@@ -22,14 +22,19 @@
         <a href="#" class="link logo">
           web<span class="logo-studio">studio</span>
         </a>
+      </nav>
+      <nav class="menu-mobile">
+
         <!-- burger menu start -->
-        <button class="menu-toggle js-open-menu">
+            <button class="icon-hamburger js-open-menu">
           <svg width="32px" height="22px">
             <use href="./images/icons-hm6.svg#icon-hamburger" class="icon-hamburger"></use>
           </svg>
         </button>
+        <div class="mobile-menu js-menu-container">
+          <button class="menu-button generic-button js-close-menu">x</button>
           <ul class="list nav">
-            <li>
+            <li class="isactive">
               <a class="link-is-active current-page" href="./index.html">Studio</a>
             </li>
             <li>
@@ -39,28 +44,77 @@
               <a href="" class="link">Contacts</a>
             </li>
           </ul>
-          <address class="contacts">
-            <ul class="list address">
-              <li>
-                <a href="mailto:info@devstudio.com" class="link contacts email">
-                  info@devstudio.com
+          <address>
+            <ul class="address-js">
+              <li><a href="tel:+110001111111" class="link-contacts-js link-number">+11 (000) 111-11-11</a></li>
+              <li><a href="mailto:info@devstudio.com" class="link-contacts-js link-email"> info@devstudio.com</a></li>
+            </ul>
+            </address>
+            <ul class="social-media">
+              <li class="circle">
+                <a href="">
+                  <svg width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
                 </a>
               </li>
-              <li>
-                <a href="tel:+11(000)111-11-11" class="link contacts phone">
-                  +11 (000) 111-11-11
+              <li class="circle">
+                <a href="">
+                  <svg width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="circle">
+                <a href="">
+                  <svg width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="circle">
+                <a href="">
+                  <svg width="16px" height="16px">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
                 </a>
               </li>
             </ul>
-          </address>
         </div>
+      </nav>
+      </div>
 
 
-    </div>
+    <!-- MENU na TABLET/DESKTOP -->
+    <nav class="flex-nav">
 
+      <ul class="list nav">
+        <li>
+          <a class="link-is-active current-page" href="./index.html">Studio</a>
+        </li>
+        <li>
+          <a href="./portfolio.html" class="link">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="link">Contacts</a>
+        </li>
+      </ul>
     </nav>
+    <address class="contacts">
+      <ul class="list address">
+        <li>
+          <a href="mailto:info@devstudio.com" class="link contacts email">
+            info@devstudio.com
+          </a>
+        </li>
+        <li>
+          <a href="tel:+11(000)111-11-11" class="link contacts phone">
+            +11 (000) 111-11-11
+          </a>
+        </li>
+      </ul>
+    </address>
 
-    </div>
   </header>
   <main>
     <section class="hero">
@@ -503,10 +557,10 @@
       </ul>
     </address>
   </div>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="js/mobile-menu.js"></script>
+
+  <script src="./js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
+
 </body>
 
 </html>

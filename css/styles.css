@@ -845,7 +845,11 @@ color: var(--ocean);}
 
 
 
+
+
+
   @media (min-width: 320px), (max-width: 767px) {
+
     .container {
       max-width: 100%;
       margin: 0 auto;
@@ -1092,20 +1096,26 @@ align-self: center;
   stroke: currentColor; 
   fill: var(--white);
   background-color: transparent;
+  border: none;
+}
+.mobile-menu {
+	position: fixed;
+	inset: 0;
+	translate: -100% 0 0;
+	transition: translate 400ms;
+	background-color: white;
+  width: 428px;
+  height: 796px;
 }
 
-.burger-menu  {
-  position: fixed;
+.mobile-menu.is-open {
+	translate: none;
+}
 
-    max-width: 100vh;
-    height: 100vh;
-    padding-left: 15px;
-    padding-right: 15px;
 
-    background-color: #3f51b5;
-    z-index: 999;
-  }
-  .burger-menu ul {
+
+
+  .mobile-menu ul {
 
     top: 0;
     left: 0;
@@ -1114,12 +1124,32 @@ align-self: center;
     padding: 32px;
   }
 
-.burger-menu>.is-open {
-  transform: translateX(0);
-}
+  .address-js{
+    display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 40px;
+  }
 
-
-
+  .link-number{
+    color: var(--iris, #4D5AE5);
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.72px;
+  text-transform: capitalize;
+  }
+  .link-email{
+    color: var(--slate, #434455);
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.4px;
+  margin-bottom: 48px;
+  }
   }
 
 
@@ -1142,7 +1172,7 @@ align-self: center;
 
 
 
-  @media  (min-width: 768px){
+  @media  (min-width: 768px), (max-width: 1199px){
   .menu-toggle {
     display: none;
   }
@@ -1154,6 +1184,7 @@ align-self: center;
     }
     
     .logo {
+      margin-left: 5%;
           font-weight: 800;
       font-size: 18px;
       line-height: 1.17;
@@ -1182,8 +1213,7 @@ align-self: center;
       flex-direction: column;
     }
 .flex-nav {display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 40px; }
    
   .hero {
@@ -1373,7 +1403,9 @@ margin-bottom: 20%;
 align-self: center;
 margin-left: 24px;
 }
-
+.mobile-menu{
+  display: none;
+}
 .burger-menu {
   display: none;
 }
@@ -1382,6 +1414,10 @@ margin-left: 24px;
 
 
 @media  (min-width: 1200px) {
+.mobile-menu{
+  display: none;
+}
+
   .container {
     max-width: 1158px;
     margin: 0 auto;
@@ -1483,9 +1519,9 @@ margin-left: 24px;
     background-color: var(--ocean);
   }
   
-  .flex-nav {
-    gap: 40px;
-  }
+  .flex-nav {display: flex;
+
+    gap: 40px; }
   
   .contacts {
     color: var(--slate);
