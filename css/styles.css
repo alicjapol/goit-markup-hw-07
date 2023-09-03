@@ -1334,8 +1334,8 @@ padding: 0 10%;
 padding-top: 74px;
 margin: 0 auto;
 flex-wrap: wrap;
-justify-content: space-between;
-flex-direction: row;}
+flex-direction: row;
+gap: 5%}
 
  .team {
   margin-bottom: 10%;
