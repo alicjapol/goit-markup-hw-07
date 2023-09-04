@@ -1958,12 +1958,7 @@ gap: 24px;
     transition-timing-function: var(--tr-timing-function);
   }
   
-  .costumers {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
-  }
-  
+ 
   .circle-footer > a {
     display: flex;
     justify-content: center;
