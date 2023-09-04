@@ -1160,6 +1160,7 @@ list-style: none;
 .flex-header {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
   
