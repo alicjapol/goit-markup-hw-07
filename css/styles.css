@@ -840,7 +840,6 @@ color: var(--ocean);}
 
     .container {
       max-width: 100%;
-      margin: 0 auto;
       padding: 0 15px;
       overflow: hidden;
     }
@@ -1270,7 +1269,6 @@ padding-right: 50px;
 }
     .container {
       max-width: 100%;
-      margin: 0 auto;
       padding: 0 15px;
     }
     
@@ -1307,7 +1305,6 @@ text-decoration: none;
       flex-direction: column;
     }
 .flex-nav {display: flex;
-  justify-content: space-around;
   gap: 40px; }
    
   .hero {
@@ -1351,7 +1348,7 @@ text-decoration: none;
     .first-section-studio {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;}
+      justify-content: space-eve\;}
     
     .element-header {
       font-size: 2.25em;
@@ -1374,8 +1371,9 @@ text-decoration: none;
   padding-top: 10%;
   background-color: var(--cloud);
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  gap: 5%;
 }
 .section-header-team {
   font-size: 36px;
@@ -1520,7 +1518,6 @@ a.web-studio2{
   }
   
   .flex-header {
-    margin: 0 auto;
     display: flex;
     justify-content: baseline;
     border-bottom: 1px solid var(--cornflower);
@@ -1690,7 +1687,7 @@ a.web-studio2{
   .list.projects {
     display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   margin: 0px;
 gap: 24px;
   }
@@ -1736,7 +1733,8 @@ gap: 24px;
   .section-team {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: row;
     text-align: center;
     row-gap: 24px;
     padding-top: 74px;
@@ -1964,7 +1962,6 @@ gap: 24px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
-    justify-content: space-between;
   }
   
   .circle-footer > a {
