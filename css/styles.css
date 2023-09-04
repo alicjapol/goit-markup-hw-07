@@ -704,7 +704,7 @@ color: var(--light-slate);
 }
 
 .form-submit {
-  /* margin-left: 24px; */
+  margin-left: 24px;
   min-width: 165px;
   height: 40px;
   position: relative;
@@ -1199,8 +1199,8 @@ list-style: none;
 
 }
 
-.form-wrapper {
-      width: 100%;
+.menu-mobile {
+  margin-left: 150px;
 }
 
 .element-content3 {
@@ -1246,6 +1246,7 @@ text-align: center;
   display: flex;
   gap: 24px;
   width: auto;
+  margin-left: 80px;
 }
 
 .menu-mobile {
@@ -1265,6 +1266,7 @@ padding-right: 50px;
 
 .input-wrapper {
   display: flex;
+  flex-direction: column;
     gap: 24px;
     width: auto;
 }
@@ -1339,6 +1341,7 @@ text-decoration: none;
     padding-top: 5%;
     padding-bottom: 5%;
     width:768px;
+    margin: 0 auto;
     }
     
     
@@ -1349,7 +1352,8 @@ text-decoration: none;
     .first-section-studio {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-eve\;}
+      justify-content: center;
+    }
     
     .element-header {
       font-size: 2.25em;
@@ -1374,6 +1378,7 @@ text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row; 
+  justify-content: center;
   gap: 5%;
 }
 .section-header-team {
@@ -1679,6 +1684,7 @@ a.web-studio2{
     display: flex;
     flex-direction: row;
     gap: 24px;
+    justify-content: center
   }
   
   .goals li {
