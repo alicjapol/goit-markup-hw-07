@@ -149,6 +149,7 @@ address {
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--white);
+  padding-bottom: 40px;
 text-align: center;}
 
 .order {
@@ -695,10 +696,7 @@ color: var(--light-slate);
 
 /* FORM */
 
-.form-wrapper {
-  /* margin-left: 80px; */
-  /* gap: 24px; */
-}
+
 
 .input-wrapper > label {
   font-size: 16px;
@@ -1040,12 +1038,12 @@ display: flex;
   padding-bottom: 15%;
 }
 
-.form-wrapper {
+/* .form-wrapper {
   text-align: center;
   display: flex;
 row-gap: 24px;
   flex-direction: column;
-}
+} */
 
 
 form.email-submit  {
@@ -1212,6 +1210,22 @@ list-style: none;
 
   @media  (min-width: 768px) and (max-width: 1199px){
 
+.fomr-wrapper {
+  display: flex;
+  gap: 24px;
+  width: auto;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+
+.flex-nav-desk  {
+  display: flex;
+  align-items: center;
+padding-right: 50px;
+}
 
     .header-flex>.icon-hamburger {
         display: none;
@@ -1245,8 +1259,11 @@ list-style: none;
       color: var(--navy-blue);
     }
     .nav  {
+      display: flex;
 text-decoration: none;
-      padding: 24px 0;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      padding-right: 150px;
       gap: 40px;
       font-weight: 500;
       line-height: 1.5;
@@ -1324,6 +1341,9 @@ text-decoration: none;
 .team-background {
   padding-top: 10%;
   background-color: var(--cloud);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .section-header-team {
   font-size: 36px;
@@ -1599,7 +1619,6 @@ align-self: center;
       url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 1440px;
     height: 600px;
     margin: 0 auto;
     background-position: center;
@@ -2182,32 +2201,16 @@ gap: 24px;
   
   /* FORM */
   
-  .form-wrapper {
+  /* .form-wrapper {
     
     margin-left: 0px;
 
-  }
+  } */
   .input-wrapper {
 width: 100%;
   }
 
-  .footer-subscribe {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: white;
-    display: block;
-    margin-bottom: 16px;
-    text-align: center;
-  }
-  /* .input-wrapper > label {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--white);
-  } */
+
   
   .form-submit {
     margin-left: 24px;
@@ -2339,3 +2342,11 @@ width: 100%;
     padding-right: 100px;
   }
 }
+
+.footer-subscribe {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+} 

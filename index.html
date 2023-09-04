@@ -88,6 +88,7 @@
 
 
     <!-- MENU na TABLET/DESKTOP -->
+    <div>
     <div class="flex-nav-desk desk">
  
 
@@ -118,6 +119,7 @@
       </ul>
     </address>
   </div>
+</div>
   </header>
   <main>
     <section class="hero">
@@ -513,11 +515,14 @@
       </div>
       <div class="form-wrapper">
           <div class="input-wrapper">
-            <label for="email" class="footer-subscribe">Subscribe</label>
-            <form>
+            <span for="email" class="footer-subscribe">Subscribe</span>
+            <form name="subscribe-form">
+              <label for="subscribe-form">
             <div class="email-submit">
               <input type="email" name="email" id="email" placeholder="E-mail" required />
-         
+            </label>
+
+
               <button class="form-submit" type="submit">
                 <span class="padding-button">Subskrybcja</span>
                 <svg width="24px" height="20px" class="icon-send">
@@ -527,8 +532,7 @@
             </div>
     
           </div>
-        </form>
-      </div>
+        </form>      </div>
   </footer>
   
   <script defer="" src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
