@@ -1239,6 +1239,7 @@ text-align: center;
 
 
 
+
   @media  (min-width: 768px) and (max-width: 1199px){
 .form-submit{
     margin-top: 40px;
@@ -1248,18 +1249,21 @@ text-align: center;
   display: flex;
   gap: 24px;
   width: auto;
-  margin-left: 80px;
+  margin-left: 0;
 }
 .footer {
   align-items: baseline;
 justify-content:center;
 display: flex;
 }
-
+di
 .menu-mobile {
   display: none;
 }
-
+div.footer-wrapper {
+row-gap: 0;
+align-items: baseline;
+}
 
 .flex-nav-desk  {
   display: flex;
@@ -1456,8 +1460,8 @@ display: flex;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  column-gap: 15%;
+  justify-content: center;
+  column-gap: 24px;
   row-gap: 72px;
 padding-bottom: 10%}
 
@@ -1714,7 +1718,7 @@ gap: 24px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-  }
+    text-align: next;  }
   
   .flex-column {
     flex-direction: column;
