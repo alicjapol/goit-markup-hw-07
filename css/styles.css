@@ -1176,6 +1176,8 @@ list-style: none;
 .footer {
   background-color: var(--navy-blue);
   padding-block: 96px;
+  align-items: baseline;
+  justify-content: center;
 }
 .footer-wrapper {
   display: flex;
@@ -1247,6 +1249,11 @@ text-align: center;
   gap: 24px;
   width: auto;
   margin-left: 80px;
+}
+.footer {
+  align-items: baseline;
+justify-content:center;
+display: flex;
 }
 
 .menu-mobile {
@@ -1468,8 +1475,10 @@ padding-bottom: 10%}
 
 .email-submit  {
   /* width: 100%; */
-  row-gap: 24px;
-
+  row-gap: 24px;}
+.web-studio2{
+  text-align: left;
+}
 
 
   }
@@ -1486,8 +1495,6 @@ a.web-studio2{
   text-align: left;
 }
 
-
-}
 
 
 
@@ -1977,7 +1984,7 @@ gap: 24px;
   }
   
   .icons-footer {
-    margin-left: 120px;
+    margin-left: 80px;
   }
   
   
@@ -1988,6 +1995,7 @@ gap: 24px;
     letter-spacing: 0.02em;
     text-align: left;
     margin-bottom: 16px;
+    padding-top: 0;
   }
   
 
@@ -2215,6 +2223,10 @@ width: 100%;
   
   }
 
+  .form-wrapper {
+    margin-left: 80px;
+
+  }
   
   input::placeholder,
   textarea::placeholder {
@@ -2316,4 +2328,16 @@ width: 100%;
   .address {
     padding-right: 100px;
   }
+
+  .footer {
+    align-items: baseline
+  }
+
+
+.footer-wrapper {
+  align-items: center;
 }
+
+  }
+
+
